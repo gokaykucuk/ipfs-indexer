@@ -111,7 +111,7 @@ class Content(models.Model):
     input_prompts = models.TextField(null=True)
 
     def output_video_tag(self):
-        return mark_safe('<video src="https://pollinations.ai/ipfs/{}/output/video.mp4" width="150" height="150" autoplay=true />'.format(self.cid))
+        return mark_safe('<video src="https://pollinations.ai/ipfs/{}/output/video.mp4" width="150" height="150" autoplay muted controls />'.format(self.cid))
 
 def empty_jsonb_array():
     return []
