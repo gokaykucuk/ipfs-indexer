@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0028_content_input_image_model'),
+        ("pollinations", "0028_content_input_image_model"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_colorize',
+            model_name="content",
+            name="input_colorize",
             field=models.TextField(null=True),
         ),
     ]

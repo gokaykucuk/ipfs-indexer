@@ -10,7 +10,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         twitter_pd = pd.read_csv("data/pollinations_ai_user_tweets.csv")
-        unique_post_texts = twitter_pd['URLs'].dropna().unique()
+        unique_post_texts = twitter_pd["URLs"].dropna().unique()
 
         full_text = "".join(unique_post_texts)
         cid_numbers = re.findall("Qm[1-9A-Za-z]{44}[^OIl]", full_text)

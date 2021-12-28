@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0003_alter_processingqueue_processed_at'),
+        ("pollinations", "0003_alter_processingqueue_processed_at"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='processingqueue',
-            name='processing_started_at',
+            model_name="processingqueue",
+            name="processing_started_at",
             field=models.DateTimeField(null=True),
         ),
     ]

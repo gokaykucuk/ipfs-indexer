@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class PollinationsConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'pollinations'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "pollinations"

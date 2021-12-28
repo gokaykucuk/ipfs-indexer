@@ -7,19 +7,26 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='PollinationsCID',
+            name="PollinationsCID",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('cid', models.CharField(max_length=255)),
-                ('raw_text_input', models.TextField()),
-                ('tags', models.JSONField()),
-                ('text_output', models.TextField()),
-                ('notebook_name', models.TextField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("cid", models.CharField(max_length=255)),
+                ("raw_text_input", models.TextField()),
+                ("tags", models.JSONField()),
+                ("text_output", models.TextField()),
+                ("notebook_name", models.TextField()),
             ],
         ),
     ]

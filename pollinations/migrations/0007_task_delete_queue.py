@@ -6,21 +6,29 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0006_rename_pollinationscid_content_and_more'),
+        ("pollinations", "0006_rename_pollinationscid_content_and_more"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Task',
+            name="Task",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('cid', models.CharField(max_length=255)),
-                ('processing_started_at', models.DateTimeField(null=True)),
-                ('processed_at', models.DateTimeField(null=True)),
-                ('state', models.IntegerField(null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("cid", models.CharField(max_length=255)),
+                ("processing_started_at", models.DateTimeField(null=True)),
+                ("processed_at", models.DateTimeField(null=True)),
+                ("state", models.IntegerField(null=True)),
             ],
         ),
         migrations.DeleteModel(
-            name='Queue',
+            name="Queue",
         ),
     ]

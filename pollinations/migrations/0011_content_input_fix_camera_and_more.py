@@ -6,43 +6,43 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0010_alter_content_tags'),
+        ("pollinations", "0010_alter_content_tags"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_fix_camera',
+            model_name="content",
+            name="input_fix_camera",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_image_prompt_file',
+            model_name="content",
+            name="input_image_prompt_file",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_images_prompt_weight',
+            model_name="content",
+            name="input_images_prompt_weight",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_input_text_prompt_weight',
+            model_name="content",
+            name="input_input_text_prompt_weight",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_learning_rate',
+            model_name="content",
+            name="input_learning_rate",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_seed',
+            model_name="content",
+            name="input_seed",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_steps',
+            model_name="content",
+            name="input_steps",
             field=models.TextField(null=True),
         ),
     ]

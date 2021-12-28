@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0019_content_input_upscale_factor_and_more'),
+        ("pollinations", "0019_content_input_upscale_factor_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_diffusion_model',
+            model_name="content",
+            name="input_diffusion_model",
             field=models.TextField(null=True),
         ),
     ]

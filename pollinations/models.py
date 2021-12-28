@@ -112,7 +112,9 @@ class Content(models.Model):
     def output_video_tag(self):
         return mark_safe(
             '<video src="https://pollinations.ai/ipfs/{}/output/video.mp4" width="150" height="150" autoplay muted controls />'.format(
-                self.cid))
+                self.cid
+            )
+        )
 
 
 def empty_jsonb_array():
@@ -124,5 +126,7 @@ class Task(models.Model):
     state_updates = models.JSONField(default=empty_jsonb_array)
 
     def add_state_update(self, log: str):
-        self.state_updates.append({"timestamp": datetime.datetime.now().timestamp(), "log": log})
+        self.state_updates.append(
+            {"timestamp": datetime.datetime.now().timestamp(), "log": log}
+        )
         self.save()

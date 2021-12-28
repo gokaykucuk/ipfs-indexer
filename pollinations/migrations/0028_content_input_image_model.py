@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0027_content_input_imagemodel'),
+        ("pollinations", "0027_content_input_imagemodel"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_image_model',
+            model_name="content",
+            name="input_image_model",
             field=models.TextField(null=True),
         ),
     ]

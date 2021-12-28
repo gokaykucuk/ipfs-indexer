@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0014_content_input_model_type'),
+        ("pollinations", "0014_content_input_model_type"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_batch_size',
+            model_name="content",
+            name="input_batch_size",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_prompt',
+            model_name="content",
+            name="input_prompt",
             field=models.TextField(null=True),
         ),
     ]

@@ -6,38 +6,38 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0020_content_input_diffusion_model'),
+        ("pollinations", "0020_content_input_diffusion_model"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_content',
+            model_name="content",
+            name="input_content",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_frame_step',
+            model_name="content",
+            name="input_frame_step",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_method',
+            model_name="content",
+            name="input_method",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_sideX',
+            model_name="content",
+            name="input_sideX",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_sideY',
+            model_name="content",
+            name="input_sideY",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_translate',
+            model_name="content",
+            name="input_translate",
             field=models.TextField(null=True),
         ),
     ]

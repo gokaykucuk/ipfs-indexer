@@ -10,7 +10,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         aryshare_pd = pd.read_json("data/aryshare_success_latest.json")
-        unique_post_texts = aryshare_pd['post'].unique()
+        unique_post_texts = aryshare_pd["post"].unique()
         full_text = "".join(unique_post_texts)
         cid_numbers = re.findall("Qm[1-9A-Za-z]{44}[^OIl]", full_text)
         cid_numbers_series = pd.Series(cid_numbers)

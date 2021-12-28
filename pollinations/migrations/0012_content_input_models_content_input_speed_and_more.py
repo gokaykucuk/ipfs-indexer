@@ -6,23 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0011_content_input_fix_camera_and_more'),
+        ("pollinations", "0011_content_input_fix_camera_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_models',
+            model_name="content",
+            name="input_models",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_speed',
+            model_name="content",
+            name="input_speed",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_text_prompt',
+            model_name="content",
+            name="input_text_prompt",
             field=models.TextField(null=True),
         ),
     ]

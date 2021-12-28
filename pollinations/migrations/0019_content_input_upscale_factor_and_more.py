@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0018_content_input_youtube_dl_link'),
+        ("pollinations", "0018_content_input_youtube_dl_link"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_upscale_factor',
+            model_name="content",
+            name="input_upscale_factor",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_video_file',
+            model_name="content",
+            name="input_video_file",
             field=models.TextField(null=True),
         ),
     ]

@@ -6,58 +6,58 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0015_content_input_batch_size_content_input_prompt'),
+        ("pollinations", "0015_content_input_batch_size_content_input_prompt"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_all_title',
+            model_name="content",
+            name="input_all_title",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_choose_diffusion_model',
+            model_name="content",
+            name="input_choose_diffusion_model",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_cut_batches',
+            model_name="content",
+            name="input_cut_batches",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_cut_pow',
+            model_name="content",
+            name="input_cut_pow",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_cutn',
+            model_name="content",
+            name="input_cutn",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_imageHeight',
+            model_name="content",
+            name="input_imageHeight",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_imageWidth',
+            model_name="content",
+            name="input_imageWidth",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_init_weight_mse',
+            model_name="content",
+            name="input_init_weight_mse",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_resSize',
+            model_name="content",
+            name="input_resSize",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_starting_noise',
+            model_name="content",
+            name="input_starting_noise",
             field=models.TextField(null=True),
         ),
     ]

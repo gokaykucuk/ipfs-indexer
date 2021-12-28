@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0030_content_input_city_content_input_country_and_more'),
+        ("pollinations", "0030_content_input_city_content_input_country_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_prompts',
+            model_name="content",
+            name="input_prompts",
             field=models.TextField(null=True),
         ),
     ]

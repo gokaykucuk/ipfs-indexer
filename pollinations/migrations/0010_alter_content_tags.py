@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0009_rename_step_size_content_input_image_file_and_more'),
+        ("pollinations", "0009_rename_step_size_content_input_image_file_and_more"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='content',
-            name='tags',
+            model_name="content",
+            name="tags",
             field=models.JSONField(null=True),
         ),
     ]

@@ -17,6 +17,5 @@ class TaskAdmin(DjangoQLSearchMixin, admin.ModelAdmin):
 class ContentAdmin(DjangoQLSearchMixin, admin.ModelAdmin):
     list_display = ["id", "cid", "output_video_tag"]
 
-
     def has_delete_permission(self, request, obj=None):
         return False

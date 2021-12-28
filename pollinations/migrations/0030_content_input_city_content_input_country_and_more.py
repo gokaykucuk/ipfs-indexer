@@ -6,48 +6,48 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0029_content_input_colorize'),
+        ("pollinations", "0029_content_input_colorize"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='content',
-            name='input_city',
+            model_name="content",
+            name="input_city",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_country',
+            model_name="content",
+            name="input_country",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_doctolib_email',
+            model_name="content",
+            name="input_doctolib_email",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_doctolib_password',
+            model_name="content",
+            name="input_doctolib_password",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_dose',
+            model_name="content",
+            name="input_dose",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_start_date',
+            model_name="content",
+            name="input_start_date",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_twofa_code',
+            model_name="content",
+            name="input_twofa_code",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='content',
-            name='input_vaccine',
+            model_name="content",
+            name="input_vaccine",
             field=models.TextField(null=True),
         ),
     ]

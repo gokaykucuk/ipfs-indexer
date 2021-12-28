@@ -6,93 +6,93 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pollinations', '0004_processingqueue_processing_started_at'),
+        ("pollinations", "0004_processingqueue_processing_started_at"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_fps',
+            model_name="pollinationscid",
+            name="input_fps",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_height',
+            model_name="pollinationscid",
+            name="input_height",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_iterations',
+            model_name="pollinationscid",
+            name="input_iterations",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_notebook_ipynb',
+            model_name="pollinationscid",
+            name="input_notebook_ipynb",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_resolution',
+            model_name="pollinationscid",
+            name="input_resolution",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_social',
+            model_name="pollinationscid",
+            name="input_social",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_style',
+            model_name="pollinationscid",
+            name="input_style",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_super_resolution',
+            model_name="pollinationscid",
+            name="input_super_resolution",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='input_width',
+            model_name="pollinationscid",
+            name="input_width",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_done',
+            model_name="pollinationscid",
+            name="output_done",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_gpu',
+            model_name="pollinationscid",
+            name="output_gpu",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_gpu_memory',
+            model_name="pollinationscid",
+            name="output_gpu_memory",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_log',
+            model_name="pollinationscid",
+            name="output_log",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_run_count',
+            model_name="pollinationscid",
+            name="output_run_count",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_status',
+            model_name="pollinationscid",
+            name="output_status",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='output_success',
+            model_name="pollinationscid",
+            name="output_success",
             field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='pollinationscid',
-            name='step_size',
+            model_name="pollinationscid",
+            name="step_size",
             field=models.TextField(null=True),
         ),
     ]
