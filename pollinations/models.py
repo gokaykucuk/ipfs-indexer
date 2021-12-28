@@ -8,7 +8,7 @@ from django.utils.safestring import mark_safe
 
 class Content(models.Model):
     cid = models.CharField(max_length=255, unique=True)
-    raw_text_input = models.TextField()
+    text_input = models.TextField()
     tags = models.JSONField(null=True)
     text_output = models.TextField()
     notebook_name = models.TextField()
@@ -115,6 +115,10 @@ class Content(models.Model):
                 self.cid
             )
         )
+
+    def merge_text_inputs(self):
+        self.text_input = f"{self.input_text_input or ''}{self.input_text_prompt or ''}{self.input_text_prompt_bass or ''}{self.input_text_prompt_mids or ''}{self.input_text_prompt_treble or ''}{self.input_prompts or ''}{self.input_prompt or ''}{self.input_all_title or ''}"
+        self.save()
 
 
 def empty_jsonb_array():
