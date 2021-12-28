@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand, CommandError
 import pandas as pd
 import re
 
-from pollinations.models import ProcessingQueue
+from pollinations.models import Task
 
 
 class Command(BaseCommand):
@@ -17,5 +17,5 @@ class Command(BaseCommand):
         cid_numbers_series = cid_numbers_series.str.replace("/", "")
         unique_cids = cid_numbers_series.unique()
         print(f"{len(unique_cids)} CIDs found.")
-        ProcessingQueue.objects.bulk_create([ProcessingQueue(cid=cid) for cid in unique_cids])
+        Task.objects.bulk_create([Task(cid=cid) for cid in unique_cids])
         self.stdout.write(self.style.SUCCESS("Successfully imported products"))

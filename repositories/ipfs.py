@@ -27,7 +27,7 @@ def download_cid(cid):
     Downloads the file with the given CID.
     """
     ipfs_process = subprocess.Popen(
-        ["ipfs", "get", "-o", get_local_folder_for_cid(cid), cid]
+        ["ipfs", "--api", "/ip4/65.108.44.19/tcp/5005", "get", "-o", get_local_folder_for_cid(cid), cid]
     )
     return ipfs_process.wait()
 
