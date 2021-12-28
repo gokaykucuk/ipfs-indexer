@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6=!hm+st)jb*!3^l(xiv1@7%9ct3mnu54b1+)8b@t8leurm7$#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ipfs-indexer.zencraft.studio","localhost","127.0.0.1"]
 
 # Application definition
 
