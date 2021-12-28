@@ -12,6 +12,7 @@ class Content(models.Model):
     tags = models.JSONField(null=True)
     text_output = models.TextField()
     notebook_name = models.TextField()
+    notebook_hash = models.TextField()
     # Splatted Fields
     output_gpu = models.TextField(null=True)
     output_gpu_memory = models.TextField(null=True)
@@ -111,7 +112,7 @@ class Content(models.Model):
 
     def output_video_tag(self):
         return mark_safe(
-            '<video src="https://pollinations.ai/ipfs/{}/output/video.mp4" width="150" height="150" autoplay muted controls />'.format(
+            '<video src="https://pollinations.ai/ipfs/{}/output/video.mp4" width="250" height="250" autoplay muted controls />'.format(
                 self.cid
             )
         )
