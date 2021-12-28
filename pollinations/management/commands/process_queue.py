@@ -1,4 +1,5 @@
 from concurrent.futures import ThreadPoolExecutor
+from time import sleep
 
 from django.core.management.base import BaseCommand
 
@@ -25,5 +26,5 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         with ThreadPoolExecutor(max_workers=10) as executor:
             while True:
-                future = executor.submit(self.process_next_cid)
-                print(future.result())
+                executor.submit(self.process_next_cid)
+                sleep(1)
