@@ -5,8 +5,7 @@ import ipfshttpclient
 
 from pollinations.models import Task
 
-client = ipfshttpclient.connect(
-    '/ip4/65.108.44.19/tcp/4005/p2p/12D3KooWLWjqSrwsFJhqMtPAFTZJJFLntYD4njS68co9ZHKXzgEx')
+client = ipfshttpclient.connect('/dns/ipfs.pollinations.ai/tcp/5005/http')
 
 
 class Command(BaseCommand):
