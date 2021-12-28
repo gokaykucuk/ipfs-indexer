@@ -28,7 +28,7 @@ def download_cid(cid):
     """
     ipfs_process = subprocess.Popen(
         [
-            "ipfs",
+            "vendor/go-ipfs/ipfs",
             "--api",
             "/ip4/65.108.44.19/tcp/5005",
             "get",
